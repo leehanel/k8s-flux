@@ -11,8 +11,13 @@ spec:
       name: letsencrypt-production
     solvers:
       - dns01:
-          cloudflare:
-            email: "${SECRET_CLOUDFLARE_EMAIL}"
-            apiTokenSecretRef:
-              name: cloudflare-token-secret
-              key: cloudflare-token
+          route53:
+            region: us-east-1
+            accessKeyID: AKIA5EA62AWPDTU7UWJF
+            secretAccessKeySecretRef:
+              name: route53-certmanager
+              key: password
+        selector:
+          dnsNames:
+          - ctr.farm
+          - '*.ctr.farm'
