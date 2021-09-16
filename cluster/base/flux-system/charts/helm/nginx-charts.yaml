@@ -6,5 +6,5 @@ metadata:
   namespace: flux-system
 spec:
   interval: 15m
-  url: https://helm.traefik.io/traefi://helm.nginx.com/stable 
+  url: https://kubernetes.github.io/ingress-nginx
   timeout: 3m
