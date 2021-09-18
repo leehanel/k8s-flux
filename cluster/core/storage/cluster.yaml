@@ -64,3 +64,8 @@ spec:
       devices:
       - name: sda
       - name: sdb
+    - name: kube03.ctr.farm
+      devices:
+      - name: sdb
+      - name: sdc
+      - name: sdd
