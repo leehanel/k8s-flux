@@ -3483,6 +3483,10 @@ spec:
           name: data
         - mountPath: /tmp
           name: tmp
+      dnsconfig:
+        options:
+        - name: ndots
+          value: "1"
       nodeSelector:
         kubernetes.io/os: linux
       securityContext:
