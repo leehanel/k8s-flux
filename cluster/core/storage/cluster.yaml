@@ -62,8 +62,18 @@ spec:
     nodes:
     - name: bastion.ctr.farm
       devices:
-      - name: sda
-      - name: sdb
+      - name: /dev/disk/by-id/wwn-0x50024e9204bbc695
+      - name: /dev/disk/by-id/wwn-0x5000c5004fc75b5c
+    - name: kube02.ctr.farm
+      devices:
+      - name: /dev/disk/by-id/wwn-0x50014ee0593d60fc
+      - name: /dev/disk/by-id/wwn-0x5000c500bb103028
     - name: kube03.ctr.farm
       devices:
       - name: /dev/disk/by-id/wwn-0x5000c5004fc756cd
+    - name: kube04.ctr.farm
+      devices:
+      - name: /dev/disk/by-id/wwn-0x5000c500bb1036b4
+    - name: kube05.ctr.farm
+      devices:
+      - name: /dev/disk/by-id/wwn-0x5000c500bb10387a
