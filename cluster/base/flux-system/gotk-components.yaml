@@ -3483,7 +3483,7 @@ spec:
           name: data
         - mountPath: /tmp
           name: tmp
-      dnsconfig:
+      dnsConfig:
         options:
         - name: ndots
           value: "1"
