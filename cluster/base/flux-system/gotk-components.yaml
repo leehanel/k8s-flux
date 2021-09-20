@@ -3210,6 +3210,10 @@ spec:
       labels:
         app: helm-controller
     spec:
+      dnsConfig:
+        options:
+        - name: ndots
+          value: "1"
       containers:
       - args:
         - --events-addr=http://notification-controller/
@@ -3283,6 +3287,10 @@ spec:
       labels:
         app: kustomize-controller
     spec:
+      dnsConfig:
+        options:
+        - name: ndots
+          value: "1"
       containers:
       - args:
         - --events-addr=http://notification-controller/
@@ -3358,6 +3366,10 @@ spec:
       labels:
         app: notification-controller
     spec:
+      dnsConfig:
+        options:
+        - name: ndots
+          value: "1"
       containers:
       - args:
         - --watch-all-namespaces=true
